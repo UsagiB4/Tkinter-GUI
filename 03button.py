@@ -2,10 +2,15 @@ from tkinter import *
 
 root = Tk()
 
+
+def a_click():
+    a_label = Label(root, text="A click has happened")
+    a_label.pack()
+
+
 simpleLabel = Label(root, text="Just simple Text here")
 
-
-simpleButton = Button(root, text="Click here")
-simpleButton.grid(row=0, column=0)
-simpleLabel.grid(row=2, column=0)
+simpleButton = Button(root, text="Click here", padx=50, pady=20, command=a_click)
+simpleButton.pack()
+simpleLabel.pack()
 root.mainloop()
