@@ -10,7 +10,7 @@ def a_click():
 
 simpleLabel = Label(root, text="Just simple Text here")
 
-simpleButton = Button(root, text="Click here", padx=50, pady=20, command=a_click)
+simpleButton = Button(root, text="Click here", padx=50, pady=20, command=a_click, fg='red', bg='#c0ff33')
 simpleButton.pack()
 simpleLabel.pack()
 root.mainloop()
